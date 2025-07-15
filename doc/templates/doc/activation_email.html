@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <style>
+	  	body {
+	  		background-color: #212121;
+	  		text-align: center;
+	  	}
+	  	.text {
+	  		color: #E0E0E0;
+	  	}
+	  	.email {
+	  		display: block;
+	  		color: #1976D2;
+	  	}
+	  	img {
+	  		width: 100%;
+	  	}
+	    .btn {
+	    display: inline-block;
+		  padding: .5rem 1rem;
+		  margin: 1rem 0;
+		  background-color: #65a4e3;
+		  border-radius: 4px;
+		  color: #fff;
+		  text-transform: uppercase;
+	    text-decoration: none;
+	    }
+	  </style>
+	</head>
+	<body>
+		<div>
+			<img src="{{ logo_url }}" alt="Logo">
+			<h2 class="text">Welcome</h2>
+			<p class="text" style="margin: 1rem 0">Please confirm your email address to complete the registration porcess.</p>
+			<span class="email">{{ email }}</span>
+			<a href="{{ activation_link }}" class="btn">click here</a>
+		</div>
+	</body>
+</html>
